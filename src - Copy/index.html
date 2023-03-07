@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <title>Electron Weather</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Mexico <br/> Weather</h1>
+        <p>illustration by <strong>Sakuragi Hanamichi</strong></p>
+    </header>
+ <div class="box1">
+    <main>
+        <p>Select a city to find out the weather conditions</p>
+        <form method="POST" id="weatherForm">
+            <select id="city">
+                <option value="Mexico City">Mexico City</option>
+                <option value="Cancun">Cancun</option>
+                <option value="Guadalajara">Guadalajara</option>
+                <option value="Monterrey">Monterrey</option>
+                <option value="Yucatan">Yucatan</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Sinaloa">Sinaloa</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Durango">Durango</option>
+                <option value="Campeche">Campeche</option>
+                <option value="Oaxaca">Oaxaca</option>
+                <option value="Chiapas">Chiapas</option>
+                <option value="Guanajuato">Guanajuato</option>
+
+
+            </select>
+            <input id="postSubmit" type="submit" value="Submit" />
+        </form>
+    </main>
+ </div> 
+
+ <div class="box2">
+    <h3>Top 5 The Most Interest Places To Visit </h3>
+
+    <a href="https://www.mexicancaribbean.travel/cancun/" target="_blank">
+
+        <img src="file:///C:/Users/Avita/Desktop/OOP/travelpal2/src/gambar/cancun.jpg" width="500px">
+        <p> Cancun </p>
+    </a>
+
+    <a href="https://www.chichenitza.com/" target="_blank">
+
+        <img src="file:///C:/Users/Avita/Desktop/OOP/travelpal2/src/gambar/mexico7.jpg" width="500px">
+        <p> Chichen Itza </p>
+    </a>
+
+    <a href="https://www.islandlifemexico.com/tulum-ruins-visitors-guide/" target="_blank">
+
+        <img src="file:///C:/Users/Avita/Desktop/OOP/travelpal2/src/gambar/tulum.jpg" width="500px">
+        <p> Tulum Archaeological Zone </p>
+    </a>
+
+    <a href="https://visitpuertovallarta.com/" target="_blank">
+
+        <img src="file:///C:/Users/Avita/Desktop/OOP/travelpal2/src/gambar/puerto.jpg" width="500px">
+        <p> Puerto Vallarta </p>
+    </a>
+
+    <a href="https://www.tripadvisor.com/Tourism-g150800-Mexico_City_Central_Mexico_and_Gulf_Coast-Vacations.html" target="_blank">
+
+        <img src="file:///C:/Users/Avita/Desktop/OOP/travelpal2/src/gambar/mexico%20city.jpg" width="500px">
+        <p> Mexico City </p>
+    </a>
+
+ </div>
+ <div class="box3">
+    <center>
+        <h1>Meal Search</h1>
+        <div>
+            <label for="meal-input">Enter a meal name based on drop down below : </label>
+            <input type="text" id="meal-input" name="meal-input">
+            <select id="meal-input">
+                <option value="pancake">Pancake</option>
+                <option value="eton mess">Eton Mess</option>
+                <option value="Mince Pies">Mince Pies</option>
+                <option value="Ful Medames">Ful Medames</option>
+            </select>
+            <button onclick="searchMeal()">Search</button>
+            <div id="meal-result"></div>
+        </div>
+        <div id="meal-result"></div>
+      </center>
+      <script src="food_function.js"></script>
+ </div>
+
+    <script src="function.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <h3>LA PATRIA ES PRIMERO</h3>
+            <p>FIND MEXICO WITH ONE CLICK</p>
+            <ul class="socials">
+                <i class="fa-brands fa-instagram"></i>
+                <li><a href="https://www.instagram.com/visitmexico/?hl=en">Instagram</a></li>
+                <i class="fa-brands fa-facebook"></i>
+                <li><a href="https://www.facebook.com/Mexico/">Facebook</a></li>
+                <i class="fa-brands fa-twitter"></i>
+                <li><a href="https://twitter.com/mexico">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p> Created &copy;2022 Mexico. designed by <span>Sakuragi Hanamichi</span></p>
+        </div>
+    </footer>
+</body>
+</html>
